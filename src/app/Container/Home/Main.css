@@ -1,0 +1,17 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 670px;
+  background-image: url("../../static/Home/bg.jpg");
+}
+button.go-up {
+  display: none;
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+  width: 70px;
+  padding: 5px 0;
+  border: 2px solid white;
+  z-index: 5;
+}

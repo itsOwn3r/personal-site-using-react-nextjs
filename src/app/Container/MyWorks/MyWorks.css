@@ -1,0 +1,261 @@
+.index0 {
+  transform: translateY(-1px);
+}
+.index1 {
+  transform: translateY(-360px);
+}
+.index2 {
+  transform: translateY(-720px);
+}
+.index3 {
+  transform: translateY(-1080px);
+}
+.index4 {
+  transform: translateY(-1440px);
+}
+
+.works-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0;
+}
+
+.works-card {
+  display: flex;
+  height: 360px;
+  width: 1000px;
+}
+
+.works-bullet {
+  width: 320px;
+  height: 100%;
+  box-shadow: 15px 0 9px -15px #1f2235;
+}
+.works-bullets-details {
+  flex-grow: 1;
+  width: 600px;
+  overflow: hidden;
+  padding: 0 0 0 70px;
+}
+
+.experience-description {
+  margin: 10px 0 0 0;
+  text-align: justify;
+  max-width: 100%;
+}
+
+.works-details-carousal {
+  transition: transform 1s ease-out;
+}
+
+.bullet-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bullets {
+  width: 80%;
+  position: relative;
+  z-index: 2;
+}
+.bullet {
+  display: flex;
+  align-items: center;
+  background-color: #1f2235;
+  width: 30px;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  transition: width 0.9s ease;
+  cursor: pointer;
+}
+
+.bullet-label {
+  font-size: 16px;
+  margin-left: 15px;
+  white-space: nowrap;
+  font-family: "Poppins SemiBold";
+}
+
+.bullet-logo {
+  width: 22px;
+  height: 22px;
+  height: 100%;
+  margin: 0 30px 0 0;
+}
+
+.bullet-icons {
+  width: 40px;
+  height: 100%;
+  z-index: 1;
+  background-color: #1f2235;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.selected-bullet {
+  color: aqua;
+  width: 100%;
+  background: linear-gradient(to left, #3c4056 30%, #1f2235 50%) right
+}
+
+.works-screen-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 100%;
+  margin-top: 35%;
+}
+
+.works-heading {
+  display: flex;
+  flex-direction: column;
+
+  /* tsting */
+  white-space: nowrap;
+  padding: 10px 0;
+}
+.works-main-heading {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading-bullet {
+  position: absolute;
+  left: -30px;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  background-color: var(--dark-orange);
+  border-radius: 50%;
+}
+
+.works-sub-heading {
+  font-size: 14px;
+  font-family: "Poppins SemiBold";
+  color: #7e7e7e;
+}
+
+.works-heading-description {
+  font-size: 12px;
+  text-align: justify;
+}
+
+.heading-date {
+  background-color: var(--dark-orange);
+  padding: 4px 12px;
+  font-size: 14px;
+  border-radius: 14px;
+  color: white;
+}
+
+.skill-parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
+}
+
+.programming-skills-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-percentage {
+  position: relative;
+  height: 15px;
+  width: 70%;
+  background-color: #1f2235;
+}
+.skill-percentage .active-percentage-bar {
+  height: 15px;
+  transition: 0.8s ease;
+  position: absolute;
+  background-color: var(--dark-orange);
+}
+
+.skill-parent span {
+  font-family: "Poppins SemiBold";
+  font-size: 16px;
+  color: #626262;
+}
+
+.experience-description .works-description-text {
+  padding: 20px 0;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 1110px) {
+  .works-card {
+    width: 880px;
+  }
+  .works-bullets-details {
+    padding-left: 70px;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .works-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .bullets {
+    width: 90%;
+  }
+  .works-card {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+    align-items: center;
+  }
+  .works-bullets-details{
+    width: 100%;
+    height: 360px;
+    padding: 0;
+  }
+  .works-bullet{
+    width: 100%;
+    margin: 30px 0;
+  }
+  .selected-bullet{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 512px) {
+    .works-main-heading {
+        flex-direction: column;
+        text-align: center;
+    }
+    .heading-date{
+        width: fit-content;
+        margin: 16px auto;
+    }
+    .works-screen-container:nth-child(2) {
+        margin-top: 100% !important;
+    }
+    .works-screen-container:nth-child(3) {
+        margin-top: 30%;
+    }
+    .heading-container{
+      margin-bottom: 0;
+    }
+
+}
+
+
