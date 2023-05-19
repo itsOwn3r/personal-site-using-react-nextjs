@@ -72,6 +72,11 @@
     outline: none;
   }
   
+  .App{
+    background-color: black;
+    color: white;
+  }
+
   body {
     margin: 0;
     overflow-y: overlay;
