@@ -2,7 +2,7 @@
 import React from "react";
 import Typical from "react-typical";
 import ScrollService from "@/app/utilities/ScrollService";
-import "./profile.css"
+import "./Profile.css"
 const Profile = (props) => {
   return <div className="profile-container" id={props.id || ""}>
     <div className="profile-parent">
