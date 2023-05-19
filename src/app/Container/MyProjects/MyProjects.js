@@ -17,11 +17,11 @@ function MyProjects(props) {
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
   return (
     <>
+      <section className="projects-section fade-in" id={props.id || ""}>
       <ScreenHeading
         title={"My Projects"}
         subHeading={"Here Are Some of my Projects"}
       />
-      <section className="projects-section fade-in" id={props.id || ""}>
         <div className="project-item">
           <div className="project-comment">
             <p>
