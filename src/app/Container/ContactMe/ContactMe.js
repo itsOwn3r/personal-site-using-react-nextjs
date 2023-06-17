@@ -42,7 +42,7 @@ function ContactMe(props) {
         email,
         message,
       };
-      const res = await fetch(`https://api.own3r.me/contact`,{
+      const res = await fetch(`https://api.own3r.me/contact/`,{
         method: 'POST',
         body: JSON.stringify(data)
       })
