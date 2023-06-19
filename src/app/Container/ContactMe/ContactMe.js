@@ -74,7 +74,7 @@ function ContactMe(props) {
               steps={[
                 "Send Me A Message !",
                 5000,
-                "I try to reply in very short time!",
+                "I'll try to reply in very short time!",
                 5000,
 
               ]}
