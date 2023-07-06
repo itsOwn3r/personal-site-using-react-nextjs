@@ -311,7 +311,7 @@ function MyProjects(props) {
           <div className="project-comment">
             <p>
               <i className="fa fa-quote-left"></i>
-              Budget Tracker With Live Edit And Google Chart<br/> <a href="https://budgettracker.pages.dev/"  target="_blank">Preview </a> - <a href="https://github.com/itsOWNER/Budget-Tracker" target="_blank"> GitHub</a>
+              Budget Tracker With Live Edit And Google Chart<br/> <a href="https://budgettracker.pages.dev/"  target="_blank">Preview </a> - <a href="https://github.com/itsOwn3r/Budget-Tracker" target="_blank"> GitHub</a>
               <i className="fa fa-quote-right"></i>
             </p>
           </div>
@@ -411,6 +411,56 @@ function MyProjects(props) {
         </div>
 
 
+
+        <div className="project-item">
+          <div className="project-comment">
+            <p>
+              <i className="fa fa-quote-left"></i>
+              Bulk File Renamer with Zip and UnZip support <br />
+              <a href="https://rename.own3r.me/" target="_blank">Preview</a> - <a href="https://github.com/itsOwn3r/Bulk-file-renamer" target="_blank">GitHub</a>
+              <i className="fa fa-quote-right"></i>
+            </p>
+          </div>
+          <div className="projects-info">
+            <img
+              alt="Bulk File Renamer"
+              src={require("../../static/images/projects/Bulk-File-Renamer.png").default.src}
+              width={100}
+              height={100}
+              onClick={() => {
+                window.open(
+                  require("../../static/images/projects/Bulk-File-Renamer.png").default.src
+                );
+              }}
+            />
+          </div>
+        </div>
+
+
+
+        <div className="project-item">
+          <div className="project-comment">
+            <p>
+              <i className="fa fa-quote-left"></i>
+              Download Time in Vanilla JS and React/NextJS <br />
+              <a href="https://dt.own3r.me/" target="_blank">Preview</a> - <a href="https://github.com/itsOwn3r/Download-Time-VanilaJS" target="_blank">VanillaJS GitHub</a> - <a href="https://github.com/itsOwn3r/Download-Time-React-NextJS" target="_blank">React/NextJS GitHub</a>
+              <i className="fa fa-quote-right"></i>
+            </p>
+          </div>
+          <div className="projects-info">
+            <img
+              alt="Download Time"
+              src={require("../../static/images/projects/Download-Time.png").default.src}
+              width={100}
+              height={100}
+              onClick={() => {
+                window.open(
+                  require("../../static/images/projects/Download-Time.png").default.src
+                );
+              }}
+            />
+          </div>
+        </div>
 
 
         <Footer />

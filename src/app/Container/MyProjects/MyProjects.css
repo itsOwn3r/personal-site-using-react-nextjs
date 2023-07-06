@@ -117,6 +117,10 @@
   color: var(--light-blue);
 }
 
+.project-item a:hover {
+  color: #76deff;
+}
+
 
 @media screen and (max-width:1030px){
     .projects-section .project-item{
