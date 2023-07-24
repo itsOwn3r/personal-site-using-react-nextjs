@@ -468,7 +468,7 @@ function MyProjects(props) {
 
         <div className="project-item">
           <div className="project-comment">
-          <p><i className="fa fa-quote-left"></i> 1.<a href="https://github.com/itsOwn3r/JS-Password-Generator" target="_blank">Strong Password Generator.</a> - <a href="https://p.own3r.me/" target="_blank">Preview</a> 2.<a href="https://github.com/itsOwn3r/Wikipedia-Dark-Mode" target="_blank">Wikipedia Dark Mode Extension.</a> <i className="fa fa-quote-right"></i></p></div>
+          <p><i className="fa fa-quote-left"></i> 1.<a href="https://github.com/itsOwn3r/JS-Password-Generator" target="_blank">Strong Password Generator.</a> | <a href="https://p.own3r.me/" target="_blank">Preview</a> - <br /> 2.<a href="https://github.com/itsOwn3r/Wikipedia-Dark-Mode" target="_blank">Wikipedia Dark Mode Extension.</a> <i className="fa fa-quote-right"></i></p></div>
           <div className="projects-info">
             <img alt="ClipBoard Share Share" className="generator" show={"true"} src={require("../../static/images/projects/Password-Generator.png").default.src} width={100} height={100}onClick={() => {window.open(require("../../static/images/projects/Password-Generator.png").default.src);}}/>
              <i className="fa fa-arrow-right fa-3x next" onClick={() => {
