@@ -277,9 +277,9 @@ function MyProjects(props) {
 
         <div className="project-item">
           <div className="project-comment">
-            <p><i className="fa fa-quote-left"></i> Chrome Extentions(1.Volume For Youtube Shorts. 2.Super Simple Ext. to show the latest Crypto price. 3.Text/Url to QR Code)<i className="fa fa-quote-right"></i></p></div>
+            <p><i className="fa fa-quote-left"></i> Chrome Extensions(1.Volume For Youtube Shorts. 2.Super Simple Ext. to show the latest Crypto price. 3.Text/Url to QR Code)<i className="fa fa-quote-right"></i></p></div>
           <div className="projects-info">
-            <img alt="Chrome Extentions" className="ext-img-one" show={"true"} src={require("../../static/images/projects/shorts-ext.jpg").default.src} width={100} height={100}onClick={() => {window.open(require("../../static/images/projects/shorts-ext.jpg").default.src);}}/>
+            <img alt="Chrome Extensions" className="ext-img-one" show={"true"} src={require("../../static/images/projects/shorts-ext.jpg").default.src} width={100} height={100}onClick={() => {window.open(require("../../static/images/projects/shorts-ext.jpg").default.src);}}/>
              <i className="fa fa-arrow-right fa-3x next" onClick={() => {
                 if (document.querySelector(".ext-img-one").getAttribute("show") == "true") {
                   document.querySelector(".ext-img-one").setAttribute("show", "false");
@@ -293,7 +293,7 @@ function MyProjects(props) {
                   document.querySelector(".ext-img-two").style = "display: none";}
               }}
             ></i>
-            <img alt="Chrome Extentions" className="ext-img-two" show={"false"} style={{ display: "none" }} src={require("../../static/images/projects/clipboard-ext.jpg").default.src} width={100}
+            <img alt="Chrome Extensions" className="ext-img-two" show={"false"} style={{ display: "none" }} src={require("../../static/images/projects/clipboard-ext.jpg").default.src} width={100}
               height={100}
               onClick={() => {
                 window.open(
@@ -383,7 +383,7 @@ function MyProjects(props) {
 
         <div className="project-item">
           <div className="project-comment">
-            <p><i className="fa fa-quote-left"></i> ClipBoard Share Via Copyable Text and QR Code(Includes: A Web page, Chrome Extention and A Telegram Bot)<i className="fa fa-quote-right"></i></p></div>
+            <p><i className="fa fa-quote-left"></i> ClipBoard Share Via Copyable Text and QR Code(Includes: A Web page, Chrome Extension and A Telegram Bot)<i className="fa fa-quote-right"></i></p></div>
           <div className="projects-info">
             <img alt="ClipBoard Share Share" className="clip-board-one" show={"true"} src={require("../../static/images/projects/clipboard-ext.jpg").default.src} width={100} height={100}onClick={() => {window.open(require("../../static/images/projects/clipboard-ext.jpg").default.src);}}/>
              <i className="fa fa-arrow-right fa-3x next" onClick={() => {
@@ -462,6 +462,38 @@ function MyProjects(props) {
           </div>
         </div>
 
+
+
+
+
+        <div className="project-item">
+          <div className="project-comment">
+          <p><i className="fa fa-quote-left"></i> 1.<a href="https://github.com/itsOwn3r/JS-Password-Generator" target="_blank">Strong Password Generator.</a> - <a href="https://p.own3r.me/" target="_blank">Preview</a> 2.<a href="https://github.com/itsOwn3r/Wikipedia-Dark-Mode" target="_blank">Wikipedia Dark Mode Extension.</a> <i className="fa fa-quote-right"></i></p></div>
+          <div className="projects-info">
+            <img alt="ClipBoard Share Share" className="generator" show={"true"} src={require("../../static/images/projects/Password-Generator.png").default.src} width={100} height={100}onClick={() => {window.open(require("../../static/images/projects/Password-Generator.png").default.src);}}/>
+             <i className="fa fa-arrow-right fa-3x next" onClick={() => {
+                if (document.querySelector(".generator").getAttribute("show") == "true") {
+                  document.querySelector(".generator").setAttribute("show", "false");
+                  document.querySelector(".wikipedia").setAttribute("show", "true");
+                  document.querySelector(".generator").style = "display: none";
+                  document.querySelector(".wikipedia").style = "display: block";
+                } else if (document.querySelector(".generator").getAttribute("show") == "false"){
+                  document.querySelector(".generator").setAttribute("show", "true");
+                  document.querySelector(".wikipedia").setAttribute("show", "false");
+                  document.querySelector(".generator").style = "display: block";
+                  document.querySelector(".wikipedia").style = "display: none";}
+              }}
+            ></i>
+            <img alt="ClipBoard Share Share" className="wikipedia" show={"false"} style={{ display: "none" }} src={require("../../static/images/projects/Wikipedia.png").default.src} width={100}
+              height={100}
+              onClick={() => {
+                window.open(
+                  require("../../static/images/projects/Wikipedia.png").default.src
+                );
+              }}
+            />
+          </div>
+        </div>
 
         <Footer />
       </section>
